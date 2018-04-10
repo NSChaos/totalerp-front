@@ -1,0 +1,13 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+}
+.wrap > h2 {
+  text-align: center;
+}
+.wrap > * {
+  width: 100%;
+}
+.error{
+  color:#d00;
+}

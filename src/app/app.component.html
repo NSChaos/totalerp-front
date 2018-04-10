@@ -1,0 +1,11 @@
+<mat-toolbar color="primary" class="header">
+  <span>TotalERP</span>
+  <ng-container *ngIf="auth.user_data">&nbsp;
+    <a mat-raised-button color="primary" routerLink="/module/1"><i class="material-icons">stars</i> Module_1</a>&nbsp;
+    <a mat-raised-button color="primary" routerLink="/module/2"><i class="material-icons">work</i> Module_2</a>
+    <span class="filler"></span>
+    <span class="profile"><i class="material-icons">account_box</i> {{ auth.user_data.username }}</span>&nbsp;
+    <a mat-raised-button color="primary" (click)="logout()" routerLink="/"><i class="material-icons">exit_to_app</i> Signout</a>
+  </ng-container>
+</mat-toolbar>
+<router-outlet></router-outlet>
